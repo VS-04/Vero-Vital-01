@@ -1,5 +1,4 @@
-/* Accessibility: hide screen reader texts (and prefer "top" for RTL languages).
-Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-how/ */
+
 .mejs__offscreen {
     border: 0;
     clip: rect( 1px, 1px, 1px, 1px );
@@ -28,7 +27,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     box-sizing: border-box;
 }
 
-/* Hide native play button and control bar from iOS to favor plugin button */
+
 .mejs__container video::-webkit-media-controls,
 .mejs__container video::-webkit-media-controls-panel,
 .mejs__container video::-webkit-media-controls-panel-container,
@@ -90,7 +89,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     width: 100% !important;
 }
 
-/* Start: LAYERS */
+
 .mejs__background {
     left: 0;
     position: absolute;
@@ -191,9 +190,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     }
 }
 
-/* End: LAYERS */
 
-/* Start: CONTROL BAR */
 .mejs__controls {
     bottom: 0;
     display: -webkit-box;
@@ -242,7 +239,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     width: 20px;
 }
 
-/* :focus for accessibility */
+
 .mejs__button > button:focus {
     outline: dotted 1px #999;
 }
@@ -256,9 +253,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     outline: 0;
 }
 
-/* End: CONTROL BAR */
 
-/* Start: Time (Current / Duration) */
 .mejs__time {
     box-sizing: content-box;
     color: #fff;
@@ -271,9 +266,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     width: auto;
 }
 
-/* End: Time (Current / Duration) */
 
-/* Start: Play/Pause/Stop */
 .mejs__play > button {
     background-position: 0 0;
 }
@@ -286,9 +279,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     background-position: -160px 0;
 }
 
-/* End: Play/Pause/Stop */
 
-/* Start: Progress Bar */
 .mejs__time-rail {
     direction: ltr;
     -webkit-box-flex: 1;
@@ -490,9 +481,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     width: 100%;
 }
 
-/* End: Progress Bar */
 
-/* Start: Fullscreen */
 .mejs__fullscreen-button > button {
     background-position: -80px 0;
 }
@@ -501,9 +490,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     background-position: -100px 0;
 }
 
-/* End: Fullscreen */
 
-/* Start: Mute/Volume */
 .mejs__mute > button {
     background-position: -60px 0;
 }
@@ -609,9 +596,6 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     display: none;
 }
 
-/* End: Mute/Volume */
-
-/* Start: Track (Captions and Chapters) */
 .mejs__captions-button,
 .mejs__chapters-button {
     position: relative;
@@ -742,9 +726,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     display: none;
 }
 
-/* End: Track (Captions and Chapters) */
 
-/* Start: Error */
 .mejs__overlay-error {
     position: relative;
 }
@@ -770,4 +752,3 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     padding: 0 15px;
     width: 100%;
 }
-/* End: Error */
